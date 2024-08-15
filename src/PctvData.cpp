@@ -229,6 +229,7 @@ bool Pctv::LoadChannels()
 }
 
 PVR_ERROR Pctv::GetChannelStreamProperties(const kodi::addon::PVRChannel& channel,
+                                           PVR_SOURCE source,
                                            std::vector<kodi::addon::PVRStreamProperty>& properties)
 {
   std::string strUrl;
